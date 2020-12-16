@@ -12,6 +12,6 @@ namespace PharmacyMedicineSupplyService.Models
         public List<string> Chemical_Composition { get; set; }
         public string TargetAilment { get; set; }
         public DateTime DateOfExpiry { get; set; }
-        public int NumberOfTabletsInStock { get; set; }
+        public int numberOfTabletsInStock { get; set; }
     }
 }
