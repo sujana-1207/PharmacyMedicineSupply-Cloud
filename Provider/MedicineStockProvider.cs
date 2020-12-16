@@ -28,7 +28,7 @@ namespace PharmacyMedicineSupplyService.Provider
             string stringStock = await response.Content.ReadAsStringAsync();
             var medicines = JsonConvert.DeserializeObject<List<MedicineStock>>(stringStock);
             var i = medicines.Where(x => x.Name == medicineName).FirstOrDefault();
-            return i.NumberOfTabletsInStock;
+            return i.numberOfTabletsInStock;
         }
     }
 }
