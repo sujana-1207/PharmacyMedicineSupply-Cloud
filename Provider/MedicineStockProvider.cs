@@ -16,7 +16,7 @@ namespace PharmacyMedicineSupplyService.Provider
             var client = new HttpClient
             {
                 //BaseAddress = new Uri("https://localhost:44394")
-                BaseAddress = new Uri("http://20.42.39.0/")
+                BaseAddress = new Uri("http://40.88.195.131/")
             };
             var response = await client.GetAsync("MedicineStockInformation");
             if (!response.IsSuccessStatusCode)
